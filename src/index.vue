@@ -454,7 +454,7 @@
                     days = "LW";
                     break;
                 case '8':
-                    days = this.day.cronLastSpecificDomDay + 'L';
+                    days = "?";
                     break;
                 case '9':
                     days = 'L-' + this.day.cronDaysBeforeEomMinus;
@@ -486,6 +486,8 @@
                 case '6':
                 case '7':
                 case '8':
+                    weeks = this.day.cronLastSpecificDomDay + 'L';
+                    break;
                 case '9':
                 case '10':
                     weeks = "?";
